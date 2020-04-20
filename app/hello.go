@@ -112,7 +112,7 @@ func (h *hello) OnFileChange(src app.Value, e app.Event) {
 
 	reader.Set("onload", js.FuncOf(OnLoadData))
 
-	reader.Call("readAsArrayBuffer", app.JsVal(src.Get("files").Get("0")))
+	reader.Call("readAsArrayBuffer", app.JSValue(src.Get("files").Get("0")))
 
 	/*
 		let reader = new FileReader();
