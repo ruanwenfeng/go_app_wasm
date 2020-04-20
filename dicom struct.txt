@@ -1,0 +1,30 @@
+显示VR
+
+
+for all other VRs
+for VRs of OB, OD, OF, OL, OV, OW, SQ and UN  Undefined Length(0xFFFFFFFF)
+VRs of SV, UC, UR, UV and UT may not have an Undefined Length
+组号 元素号  VR 预留 值长度 数据元素值
+2    2		 2	2    4      由数据长度决定
+
+
+for VRs of AE, AS, AT, CS, DA, DS, DT, FL, FD, IS, LO, LT, PN, SH, SL, SS, ST, TM, UI, 
+UL and US the Value Length Field is the 16-bit unsigned integer following the two byte VR Field (Table 7.1-2). 
+The value of the Value Length Field shall equal the length of the Value Field
+组号 元素号  VR 值长度 数据元素值
+2    2		 2	2      由数据长度决定
+
+
+组号 元素号  值长度 数据元素值
+2    2		 4      由数据长度决定
+
+
+undefine length  (FFFE,EODD)
+
+
+
+AE AS AT CS DA DS DT FL FD IS LO LT OD OF OL OV OW PN SH SL SQ OB SS ST SV TM UC UI UL UN UR US UT UV
+
+AE AS AT CS DA DS DT FL FD IS LO LT PN SH SL SS ST TM UI UL US
+															   OB OD OF OL OV OW SQ UN
+															                           SV UC UR UV UT
